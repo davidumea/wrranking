@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container border">
+    <div class="container border bg-dark">
         <nav class="container my-2">
-            <h1 class="font-weight-bold">Ranking</h1>
+            <h1 class="font-weight-bold text-light">Ranking</h1>
             <nav class="row text-center">
                 <nav class="col-3 border py-1">
                     <h3><a href="/">Experience</a></h3>
@@ -26,18 +26,10 @@
                 </nav>
             </nav>
         </nav>
-        <table class="table table-dark">
-            <thead>
-                <tr>
-                    <th scope="col">Rank</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Experience</th>
-                    <th scope="col">Win Ratio</th>
-                    <th scope="col">K/D Ratio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
+    @yield('content')
+    </div>
+
+    <!--                 <tr>
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
@@ -57,10 +49,6 @@
                     <td>the Bird</td>
                     <td>@twitter</td>
                     <td>ja</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    @yield('content')
+                </tr> -->
 </body>
 </html>

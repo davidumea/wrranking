@@ -4,17 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PagesController extends Controller
-
-/*
-
-
+class StatsController extends Controller
 {
     public function home()
     {
-        return view('experience', [
-            'tasks' => ['ja','nej']
-        ]);
+        $stats = \App\stats::all();
+
+        return view('experience', ['stats' => $stats]);
     }
     
     public function clan()
@@ -24,7 +20,9 @@ class PagesController extends Controller
 
     public function tournament()
     {
-        return view('tournament');
+        $stats = \App\stats::all();
+
+        return view('tournament', ['stats' => $stats]);
     }
     
     public function br()
@@ -32,4 +30,3 @@ class PagesController extends Controller
         return view('br');
     }
 }
-*/

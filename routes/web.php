@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', 'PagesController@home');
-Route::get('/clan', 'PagesController@clan');
-Route::get('/tournament', 'PagesController@tournament');
-Route::get('/br', 'PagesController@br');
+/*
+Länkar till controllers
+*/
+Route::get('/', 'StatsController@home');
+Route::get('/clan', 'StatsController@clan');
+Route::get('/tournament', 'StatsController@tournament');
+Route::get('/br', 'StatsController@br');
