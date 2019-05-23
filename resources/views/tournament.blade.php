@@ -19,6 +19,7 @@
             </tr>
         </thead>
         <tbody>
+            <!--Loopar genom tabellen och skriver ut datan från databasen på rätt plats. -->
             @foreach ($stats as $stat)
                 <tr>
                     <th>{{ $stat->id }}</th>

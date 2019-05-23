@@ -13,3 +13,6 @@ Jag designade sidan med bootstrap, den ser lite annorlunda ut än min skiss men 
 2019-05-22
 skapade ny controller och model för att ha mer passande namn. Jag har fixat så att jag kan printa data från databasen på hemsidan i en lista.
 Gjorde en foreach loop som skriver ut all data på rätt plats och gör en ny rad för varje id.
+
+2019-05-23
+Lade till en "Add user" sida som man kan lägga till fler användare via en post request.

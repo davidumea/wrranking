@@ -18,3 +18,5 @@ Route::get('/', 'StatsController@home');
 Route::get('/clan', 'StatsController@clan');
 Route::get('/tournament', 'StatsController@tournament');
 Route::get('/br', 'StatsController@br');
+Route::post('/', 'StatsController@store');
+Route::get('/create', 'StatsController@create');
